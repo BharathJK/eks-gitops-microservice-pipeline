@@ -1,0 +1,18 @@
+eks-gitops-microservice-pipeline/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml           # CI/CD Automation
+├── app/
+│   ├── app.py                   # Python Flask API
+│   ├── Dockerfile               # Container build configuration
+│   └── requirements.txt         # App dependencies
+├── k8s/
+│   ├── deployment.yaml          # Kubernetes Deployment
+│   ├── service.yaml             # Kubernetes Service
+│   └── ingress.yaml             # Kubernetes Ingress / ALB Rule
+├── terraform/
+│   ├── main.tf                  # EKS & Network Resources
+│   ├── variables.tf             # Input variables
+│   ├── outputs.tf               # Infrastructure outputs
+│   └── terraform.tfvars.example # Safe variable template
+└── README.md                    # recruiter-facing docs
